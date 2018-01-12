@@ -1,0 +1,5 @@
+<!--components/category/category.wxml-->
+<view class='category-box' bindtap='toArticle'>
+  <image class='cate-image' src='{{imgUrl}}'></image>
+  <text class='title'>{{title}}</text>
+</view>

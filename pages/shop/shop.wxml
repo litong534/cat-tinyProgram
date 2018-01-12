@@ -1,0 +1,31 @@
+<wxs src="./shop.wxs" module="shop" />
+<view class="home">
+  <view class="section">
+    <view class='search'>
+      <image class='search_icon' src="https://rozwel.club/uploads/tiny/other/search.png"></image>
+      <input placeholder='search'></input>
+    </view>
+  <view class='cart btn' bindtap='toCart'>
+    <image class='cart_icon' src="https://rozwel.club/uploads/tiny/product/cart.png"></image>
+    <text class='bubble' wx:if="{{cartLen}}"><text class='number'>{{cartLen}}</text></text>
+  </view>
+  </view>
+  <view class='swiper'>
+    <swiper class='sw' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{shop.ad}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" mode='scaleToFill' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='category'>
+    <category class="cate" wx:key="*this" wx:for="{{shop.c}}" wx:for-item="c" imgUrl="{{c.url}}" title="{{c.title}}"></category>
+  </view>
+  <view class='panel'>
+    <fastkill></fastkill>
+  </view>
+  <view class='panel'>
+    <advertise wx:for="{{shop.p_ad}}" wx:key="*this" data="{{item}}"></advertise>
+  </view>
+</view>

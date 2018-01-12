@@ -1,0 +1,23 @@
+<!--pages/product/product.wxml-->
+<wxs src="./product.wxs" module="p" />
+<view class="home">
+  <view class='swiper'>
+    <swiper class='sw' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{p.product}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='introduce'>
+    <text class='name'>{{p.product_detail.title}}</text>
+    <view class='price'>
+      <text class='newprice'>￥{{p.product_detail.newPrice}}</text>
+      <text class='oldprice'>￥{{p.product_detail.oldPrice}}</text>
+    </view>
+    <text class='saled'>已售 {{p.product_detail.sold}}</text>
+  </view>
+  <license></license>
+  <bar product="{{p.product_detail}}" class="bar"></bar>
+</view>

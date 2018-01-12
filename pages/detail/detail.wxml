@@ -1,0 +1,7 @@
+<!--pages/detail/detail.wxml-->
+<wxs src="../index/article.wxs" module="detail" />
+<view class='img-container'>
+  <image class='img-header' src="{{detail.d[_id].bigImg}}"></image>
+  <view class='title-header'><text class='title'>{{detail.d[_id].title}}</text></view>
+</view>
+<rich-text nodes="{{detail.d[_id].detail}}"></rich-text>

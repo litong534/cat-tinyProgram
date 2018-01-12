@@ -1,0 +1,72 @@
+/* pages/cart/cart.wxss */
+.home {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  background: #f5f4f9;
+  overflow-x: hidden;
+  margin-bottom: 60px;
+}
+
+.empty {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+}
+
+.empty_image {
+  width: 128px;
+  height: 128px;
+}
+
+.empty_text {
+  font-size: 16px;
+  color: #999;
+}
+
+.panel {
+  width: inherit;
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.edit {
+  font-size: 10px;
+  color: #9a9a9a;
+}
+
+.radio {
+  font-size: 14px;
+}
+
+.cartbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.goToCart {
+  padding: 12px 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: #f55b50;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

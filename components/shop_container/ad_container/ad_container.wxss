@@ -1,0 +1,72 @@
+/* components/ad_container/ad_container.wxss */
+
+.ad_container {
+  background: #fff;
+  width: 100%;
+}
+
+.ad_title {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.ad_img_box {
+  width: 100%;
+  padding: 0 10px 0;
+  box-sizing: border-box;
+}
+.ad_img {
+  width: inherit;
+  height: 120px;
+  overflow: visible;
+}
+
+.ad_box {
+  width: inherit;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 49%;
+  border: 1px solid #f5f4f9;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 120px;
+}
+
+.box_text {
+  width: 55%;
+  height:inherit;
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 14px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.box_title {
+  margin-bottom: 10px;
+}
+
+.box_intro {
+  font-size: 12px;
+  color: #777;
+}
+
+.img_box {
+  height: inherit;
+  width: 44%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.box_img {
+  width: 80px;
+  height: 80px;
+}

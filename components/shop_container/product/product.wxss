@@ -1,0 +1,42 @@
+/* components/shop_container/product/product.wxss */
+
+.product {
+  width: 100%;
+  display: flex;
+  float: left;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.title {
+  font-size: 13px;
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.price {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.newPrice {
+  color: #e53;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.oldPrice {
+  color: #a1a9c1;
+  font-size: 12px;
+  text-decoration: line-through;
+}

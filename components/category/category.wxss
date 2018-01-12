@@ -1,0 +1,19 @@
+/* components/category/category.wxss */
+.category-box {
+  padding:20rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size:24rpx;
+}
+
+.cate-image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius:50%;
+  border: 2px solid #ff6655;
+}

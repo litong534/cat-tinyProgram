@@ -1,0 +1,13 @@
+<wxs src="./fastkill.wxs" module="data" />
+<view class="container">
+  <view class='header'>
+    <text>{{title}}</text>
+    <text class='last'>{{last}}</text>
+    <timer></timer>
+  </view>
+  <view class='scrollView'>
+    <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+      <product class="scroll-view-item_H" wx:for="{{data.d}}" imgUrl="{{item.imgUrl}}" title="{{item.title}}" oldPrice="{{item.oldPrice}}" newPrice="{{item.newPrice}}"></product>
+    </scroll-view>
+  </view>
+</view>

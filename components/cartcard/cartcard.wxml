@@ -1,0 +1,12 @@
+<!--components/cartcard/cartcard.wxml-->
+<view class='panel'>
+  <radio value="{{item.id}}" bindtap="checked" checked="{{itemChecked}}"></radio>
+  <image class='itemimg' src="{{item.image}}"></image>
+  <view class='detail'>
+    <text class='title'>{{item.title}}</text>
+    <view class='detail_panel'>
+      <text class='newprice'>￥{{item.newPrice}}</text>
+      <text class='quantity'>x{{item.quantity}}</text>
+    </view>
+  </view>
+</view>

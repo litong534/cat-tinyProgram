@@ -1,0 +1,18 @@
+<!--components/ad_container/ad_container.wxml-->
+<view class='ad_container'>
+  <text class='ad_title'>{{data.title}}</text>
+  <view class='ad_img_box'>
+    <image src="{{data.ad}}" class='ad_img'></image>
+  </view>
+  <view class='ad_box'>
+    <view class='box' wx:for="{{data.items}}">
+      <view class="box_text">
+        <text class='box_title'>{{item.item_title}}</text>
+        <text class='box_intro'>{{item.item_intro}}</text>
+      </view>
+      <view class='img_box'>
+        <image src="{{item.item_img}}" class='box_img'></image>
+      </view>
+    </view>
+  </view>
+</view>

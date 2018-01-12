@@ -1,0 +1,20 @@
+<!--components/productbar/productbar.wxml-->
+<view class='bar'>
+  <view class='service btn'>
+    <image class='icon' src="https://rozwel.club/uploads/tiny/product/service.png"></image>
+    <text class='iconfont'>客服</text>
+  </view>
+  <view class='collection btn'>
+    <image class='icon' src="https://rozwel.club/uploads/tiny/product/collection.png"></image>
+    <text class='iconfont'>收藏</text>
+  </view>
+  <view class='cart btn' bindtap='toCart'>
+    <image class='icon' src="https://rozwel.club/uploads/tiny/product/cart.png"></image>
+    <text class='iconfont'>购物车</text>
+    <text class='bubble' wx:if="{{cartLen}}"><text class='number'>{{cartLen}}</text></text>
+  </view>
+  <view class='btn_group'>
+    <text class='btng buy'>立即购买</text>
+    <text class='btng intocart' bindtap='intoCart'>加入购物车</text>
+  </view>
+</view>

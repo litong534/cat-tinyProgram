@@ -1,0 +1,28 @@
+/* components/license/license.wxss */
+
+.container {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.license {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.square {
+  padding: 1px 3px;
+  border-radius: 3px;
+  background: #ff5e32;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.intro {
+  font-size: 12px;
+  color: #999;
+}

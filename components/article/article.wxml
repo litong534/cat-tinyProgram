@@ -1,0 +1,8 @@
+<!--components/article/article.wxml-->
+<view class='article-container'  bindtap="showDetail">
+  <image class='art-image' mode='center' src='{{url}}'></image>
+  <view class='detail'>
+    <text class='title'>{{title}}</text>
+    <text class='content'>{{content}}</text>
+  </view>
+</view>

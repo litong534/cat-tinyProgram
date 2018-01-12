@@ -1,0 +1,8 @@
+<!--components/timer/timer.wxml-->
+<view wx:if="{{timerArr}}">
+  <text class='cube'>{{timerArr[0]}}</text>
+  <text class='mh'>：</text>
+  <text class='cube'>{{timerArr[1]}}</text>
+  <text class='mh'>：</text>
+  <text class='cube'>{{timerArr[2]}}</text>
+</view>

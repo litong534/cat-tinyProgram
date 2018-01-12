@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": false,
+    "usingComponents": {
+      "license": "/components/license/license",
+      "bar": "/components/productbar/productbar"
+    }
+}

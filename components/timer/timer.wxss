@@ -1,0 +1,10 @@
+.cube {
+  padding: 3px 5px;
+  background: #444;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.mh {
+  font-size: 16px;
+}

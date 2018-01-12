@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<wxs src="./article.wxs" module="art" />
+<view class="home">
+  <view class='swiper'>
+    <swiper class='sw' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='category'>
+    <category wx:for="{{categories}}" wx:key="*this" wx:for-item="c" imgUrl="{{c.url}}" pageUrl="{{c.pageUrl}}" title="{{c.title}}"></category>
+  </view>
+  <view class='label'>
+    <text style='margin-left: 5px;'>每日推荐</text>
+  </view>
+  <view class='article'>
+    <article wx:for="{{art.d}}" wx:key="*this" wx:for-index="i" wx:for-item="item" data_id="{{i}}" title="{{item.title}}" content="{{item.content}}" url="{{item.img}}"></article>
+  </view>
+  <view class='loading' wx:if="{{!isReachBottom}}">加载中...</view>
+  <view class='article' wx:else>
+    <article wx:for="{{art.d}}" wx:key="*this" wx:for-index="i" wx:for-item="item" data_id="{{i}}" title="{{item.title}}" content="{{item.content}}" url="{{item.img}}"></article>
+    <view class='loading'>已经是最后一篇了</view>
+  </view>
+</view>

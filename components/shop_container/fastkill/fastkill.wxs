@@ -1,0 +1,30 @@
+var data = [
+  {
+    imgUrl: 'https://rozwel.club/uploads/tiny/countDown/1.jpg',
+    title: '金赏Golden 全期猫粮低盐配方猫粮10kg',
+    oldPrice: '175',
+    newPrice: '158'
+  },
+  {
+    imgUrl: 'https://rozwel.club/uploads/tiny/countDown/2.jpg',
+    title: '美食厨房-室内成猫蔓越莓配方（泌尿配方）4磅1.8kg',
+    oldPrice: '78',
+    newPrice: '60'
+  },
+  {
+    imgUrl: 'https://rozwel.club/uploads/tiny/countDown/3.jpg',
+    title: '法国皇家ROYAL CANIN 7岁以上室内老年猫粮1.5kg S27',
+    oldPrice: '207',
+    newPrice: '197'
+  },
+  {
+    imgUrl: 'https://rozwel.club/uploads/tiny/countDown/4.jpg',
+    title: '比瑞吉 老年专业配方猫粮天然粮2kg',
+    oldPrice: '155',
+    newPrice: '130'
+  }
+];
+
+module.exports = {
+  d: data
+};

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "猫咪后院",
+  "usingComponents": {
+    "category": "/components/category/category",
+    "article": "/components/article/article"
+  }
+}

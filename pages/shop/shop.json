@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "category": "/components/shop_category/category",
+    "fastkill": "/components/shop_container/fastkill/fastkill",
+    "advertise": "/components/shop_container/ad_container/ad_container"
+  }
+}

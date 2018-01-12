@@ -1,0 +1,22 @@
+var product = [
+  'https://rozwel.club/uploads/tiny/product/1.jpg',
+  'https://rozwel.club/uploads/tiny/product/2.jpg',
+  'https://rozwel.club/uploads/tiny/product/3.jpg',
+  'https://rozwel.club/uploads/tiny/product/4.jpg',
+  'https://rozwel.club/uploads/tiny/product/5.jpg'
+];
+
+var product_detail = {
+  id: 10086,
+  title: '伟嘉 成猫精选金枪鱼味妙鲜包85g 猫湿粮',
+  quantity: 1,
+  newPrice: 123,
+  oldPrice: 147.6,
+  sold: 511320,
+  image: 'https://rozwel.club/uploads/tiny/product/1.jpg'
+}
+
+module.exports = {
+  product: product,
+  product_detail: product_detail
+}

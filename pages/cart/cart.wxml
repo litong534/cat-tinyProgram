@@ -1,0 +1,16 @@
+<!--pages/cart/cart.wxml-->
+<view>
+  <view wx:if="{{isEmpty}}" class='empty'>
+    <image class='empty_image' src="/images/emptycart.png"></image>
+    <text class='empty_text'>购物车是空的哦~</text>
+    <view class='goToCart' bindtap='goToCart'>回到商城</view>
+  </view>
+  <view class='home' wx:else>
+    <view class='panel'>
+      <radio class='radio' checked="{{selectAll}}" bindtap="selectAll">全选</radio>
+      <text class='edit'>编辑</text>
+    </view>
+    <cartcard wx:for="{{cart}}" item="{{item}}" bind:itemChecked="itemChecked" itemChecked="{{selectAll}}" capture-bind:selectAll="selectAll"></cartcard>
+    <cartbar class="cartbar" totalPrice="{{totalPrice}}"></cartbar>
+  </view>
+</view>

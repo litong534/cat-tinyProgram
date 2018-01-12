@@ -1,0 +1,9 @@
+<!--components/shop_container/product/product.wxml-->
+<view class='product' bindtap="showProduct">
+  <image class='image' src='{{imgUrl}}'></image>
+  <text class='title'>{{title}}</text>
+  <view class='price'>
+    <text class='newPrice'>￥{{newPrice}}</text>
+    <text class='oldPrice'>￥{{oldPrice}}</text>
+  </view>
+</view>

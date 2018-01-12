@@ -1,0 +1,137 @@
+var ad = [
+  'https://rozwel.club/uploads/tiny/shop_ad/1n.jpg',
+  'https://rozwel.club/uploads/tiny/shop_ad/2n.jpg',
+  'https://rozwel.club/uploads/tiny/shop_ad/3n.jpg',
+  'https://rozwel.club/uploads/tiny/shop_ad/4n.jpg'
+];
+
+var categories = [
+  {
+    url: 'https://rozwel.club/uploads/tiny/shop_ad/food.png',
+    title: '干粮',
+  }, {
+    url: 'https://rozwel.club/uploads/tiny/shop_ad/tin.png',
+    title: '湿粮',
+  }, {
+    url: 'https://rozwel.club/uploads/tiny/shop_ad/sweet.png',
+    title: '零食',
+  }, {
+    url: 'https://rozwel.club/uploads/tiny/shop_ad/medicine.png',
+    title: '医疗',
+  }, {
+    url: 'https://rozwel.club/uploads/tiny/shop_ad/health.png',
+    title: '保健',
+  }, {
+    url: 'https://rozwel.club/uploads/tiny/shop_ad/useful.png',
+    title: '用品',
+  }, {
+    url: 'https://rozwel.club/uploads/tiny/shop_ad/clean.png',
+    title: '香波',
+  }, {
+    url: 'https://rozwel.club/uploads/tiny/shop_ad/more.png',
+    title: '更多',
+  },
+]
+
+var panel_ad = [
+  {
+    title: '新人福利',
+    ad: 'https://rozwel.club/uploads/tiny/shop_ad/1.png',
+    items: [
+      {
+        item_title: '新人专享',
+        item_intro: '最低五折起',
+        item_img: 'https://rozwel.club/uploads/tiny/shop_ad/i_1.jpg'
+      },
+      {
+        item_title: '推荐有礼',
+        item_intro: '邀好友1元起抢',
+        item_img: 'https://rozwel.club/uploads/tiny/shop_ad/i_2.jpg'
+      }
+    ]
+  },
+  {
+    title: '种草专区',
+    ad: 'https://rozwel.club/uploads/tiny/shop_ad/2n.png',
+    items: [
+      {
+        item_title: '0元试用',
+        item_intro: '值得你拥有',
+        item_img: 'https://rozwel.club/uploads/tiny/shop_ad/i_3.jpg'
+      },
+      {
+        item_title: '开箱测评',
+        item_intro: '好物揭秘',
+        item_img: 'https://rozwel.club/uploads/tiny/shop_ad/i_4.jpg'
+      },
+      {
+        item_title: '发现好货',
+        item_intro: '你值得拥有',
+        item_img: 'https://rozwel.club/uploads/tiny/shop_ad/i_5.jpg'
+      },
+      {
+        item_title: '达人甄选',
+        item_intro: '家中必备',
+        item_img: 'https://rozwel.club/uploads/tiny/shop_ad/i_6.jpg'
+      }
+    ]
+  },
+  {
+    title: '医疗保健',
+    ad: 'https://rozwel.club/uploads/tiny/shop_ad/3n.png',
+    items: [
+      {
+        item_title: '牙口乐',
+        item_intro: '改善口臭',
+        item_img: 'https://rozwel.club/uploads/tiny/shop_ad/i_7.jpg'
+      },
+      {
+        item_title: '驱虫无忧',
+        item_intro: '与虫说bye',
+        item_img: 'https://rozwel.club/uploads/tiny/shop_ad/i_8.jpg'
+      },
+      {
+        item_title: '皮肤护理',
+        item_intro: '对抗虫螨',
+        item_img: 'https://rozwel.club/uploads/tiny/shop_ad/i_9.jpg'
+      },
+      {
+        item_title: '补钙美毛',
+        item_intro: '促生亮毛发',
+        item_img: 'https://rozwel.club/uploads/tiny/shop_ad/i_10.jpg'
+      }
+    ]
+  },
+  {
+    title: '日用百货',
+    ad: 'https://rozwel.club/uploads/tiny/shop_ad/4n.png',
+    items: [
+      {
+        item_title: '冬季窝宠',
+        item_intro: '给猫咪暖个被窝',
+        item_img: 'https://rozwel.club/uploads/tiny/shop_ad/i_11.jpg'
+      },
+      {
+        item_title: '喂食器具',
+        item_intro: '萌萌喵餐具',
+        item_img: 'https://rozwel.club/uploads/tiny/shop_ad/i_12.jpg'
+      },
+      {
+        item_title: '猫咪抓板',
+        item_intro: '沙发拯救者',
+        item_img: 'https://rozwel.club/uploads/tiny/shop_ad/i_13.jpg'
+      },
+      {
+        item_title: '指甲护理',
+        item_intro: '专用指甲刀',
+        item_img: 'https://rozwel.club/uploads/tiny/shop_ad/i_14.jpg'
+      }
+    ]
+  },
+]
+
+module.exports = {
+  ad: ad,
+  c: categories,
+  p_ad: panel_ad
+}

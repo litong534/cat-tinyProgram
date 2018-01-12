@@ -1,0 +1,43 @@
+/* components/article/article.wxss */
+.article-container {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.art-image {
+  width: 70px;
+  height: 50px;
+}
+
+.detail {
+  flex:1;
+  max-width:70%;
+  padding-left: 10px;
+  display:flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 14px;
+  width: 60%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.content {
+  font-size: 12px;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #a1a1a1;
+}

@@ -1,0 +1,15 @@
+<!--components/license/license.wxml-->
+<view class='container'>
+  <view class='license'>
+    <text class='square'>正</text>
+    <text class='intro'>正品保证</text>
+  </view>
+  <view class='license'>
+    <text class='square'>免</text>
+    <text class='intro'>25省满99元免运费</text>
+  </view>
+  <view class='license'>
+    <text class='square'>退</text>
+    <text class='intro'>7天无忧退款</text>
+  </view>
+</view>

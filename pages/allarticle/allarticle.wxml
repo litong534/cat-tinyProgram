@@ -1,0 +1,5 @@
+<!--pages/allarticle/allarticle.wxml-->
+<wxs src="../index/article.wxs" module="art" />
+  <view class='article'>
+    <article wx:for="{{art.d}}" wx:for-index="i" wx:for-item="item" data_id="{{i}}" title="{{item.title}}" content="{{item.content}}" url="{{item.img}}"></article>
+  </view>

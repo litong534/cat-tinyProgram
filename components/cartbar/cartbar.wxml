@@ -1,0 +1,9 @@
+<!--components/productbar/productbar.wxml-->
+<view class='bar'>
+  <view class='pricepanel'>
+    <text>合计:</text><text class='price'>￥{{totalPrice}}</text>
+  </view>
+  <view class='btn' bindtap='charge'>
+    <text class='charge'>结算</text>
+  </view>
+</view>

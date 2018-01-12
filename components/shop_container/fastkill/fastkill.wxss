@@ -1,0 +1,36 @@
+.container {
+  padding: 10px;
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+}
+
+.last {
+  font-size: 12px;
+  color: #656565;
+  margin: 0 10px;
+}
+
+.scrollView {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.scroll-view_H{
+  white-space: nowrap;
+}
+
+.scroll-view-item_H{
+  display: inline-block;
+  width: 150px;
+}

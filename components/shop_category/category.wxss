@@ -1,0 +1,17 @@
+.category-box {
+  padding:20rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size:24rpx;
+  margin-top: 5px;
+}
+
+.cate-image {
+  width: 60rpx;
+  height: 60rpx;
+}
