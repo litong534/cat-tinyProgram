@@ -11,7 +11,7 @@
   <view class='cart btn' bindtap='toCart'>
     <image class='icon' src="https://rozwel.club/uploads/tiny/product/cart.png"></image>
     <text class='iconfont'>购物车</text>
-    <text class='bubble' wx:if="{{cartLen}}"><text class='number'>{{cartLen}}</text></text>
+    <text class='bubble' wx:if="{{cartLen}}"><text>{{cartLen}}</text></text>
   </view>
   <view class='btn_group'>
     <text class='btng buy'>立即购买</text>

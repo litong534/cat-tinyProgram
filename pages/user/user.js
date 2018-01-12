@@ -1,20 +1,20 @@
 // pages/user/user.js
+const app = getApp();
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-  
+    userInfo: {},
+    hasUserInfo: false,
+    cartLen: null
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
+  onLoad: function () {
+    this.setData({ cartLen: app.globalData.total });
+    if (app.globalData.userInfo) {
+      this.setData({
+        userInfo: app.globalData.userInfo,
+        hasUserInfo: true
+      })
+    }
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -26,7 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    this.setData({ cartLen: app.globalData.total });
   },
 
   /**
@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  toCart: function() {
+    wx.navigateTo({
+      url: '/pages/cart/cart'
+    })
   }
 })

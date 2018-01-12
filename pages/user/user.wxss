@@ -1,1 +1,120 @@
 /* pages/user/user.wxss */
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #f9f9f9;
+  overflow-x: hidden;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  width: 100%;
+  padding: 10px 0;
+
+  box-sizing: border-box;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border: 1px solid #fff;
+  box-shadow: 0 0 3px #666;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  font-size: 13px;
+}
+
+.panel {
+  margin-bottom: 10px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+.panel:last-child {
+  margin-bottom: 0;
+}
+
+.order {
+  font-size: 13px;
+  width: 100%;
+}
+
+.order-title {
+  height: 30px;
+  width: inherit;
+  padding: 20px;
+  border-bottom: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.all {
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  height: 12px;
+  width: 12px;
+  margin-left: 5px;
+}
+
+.order-item {
+  padding: 20px 10px;
+  width: inherit;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-image {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 3px;
+}
+
+.item-text {
+  font-size: 12px;
+}
+
+.cart-title {
+  font-size: 13px;
+}
+
+.bubble {
+  font-size: 22rpx;
+  background: #98a1aa;
+  border-radius: 20rpx;
+  padding: 0 15rpx;
+  top: 4rpx;
+  right: 4rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

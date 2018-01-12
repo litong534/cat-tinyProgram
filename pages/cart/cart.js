@@ -36,7 +36,6 @@ Page({
    */
   onShow: function () {
     this.setData({ cart: app.globalData.cart });
-    console.log(this.data.cart);
   },
 
   /**

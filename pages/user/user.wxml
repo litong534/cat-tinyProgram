@@ -1,2 +1,38 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class="container">
+  <view class="userinfo panel">
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class='order panel'>
+    <view class='order-title'>
+      <text class='title'>我的订单</text>
+      <view class='all'>查看全部订单
+        <image class='arrow' src="/images/right-arrow.png"></image>
+      </view>
+    </view>
+    <view class='order-item'>
+      <view class='item'>
+        <image class='item-image' src="/images/payment.png"></image>
+        <text class='item-text'>待付款</text>
+      </view>
+      <view class='item'>
+        <image class='item-image' src="/images/pack.png"></image>
+        <text class='item-text'>待发货</text>
+      </view>
+      <view class='item'>
+        <image class='item-image' src="/images/sending.png"></image>
+        <text class='item-text'>待收货</text>
+      </view>
+      <view class='item'>
+        <image class='item-image' src="/images/recieve.png"></image>
+        <text class='item-text'>已完成</text>
+      </view>
+    </view>
+  </view>
+  <view class='order-title panel' bindtap='toCart'>
+    <text class='cart-title'>购物车</text>
+    <text class='bubble' wx:if="{{cartLen}}"><text class='number'>{{cartLen}}</text></text>
+  </view>
+</view>
